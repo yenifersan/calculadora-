@@ -33,14 +33,17 @@
         
         <Button Text="8" Grid.Row="1" Grid.Column="1"
                BackgroundColor="White" TextColor="Black"
-               FontSize="36" BorderRadius="0" Clicked="OnSelectNumber" />
+               FontSize="36" BorderRadius="0" Clicked="OnSelectNumber"
+               Command="{Binding DeleteCharCommand}/>
         <Button Text="9" Grid.Row="1" Grid.Column="2"
                BackgroundColor="White" TextColor="Black"
-               FontSize="36" BorderRadius="0" Clicked="OnSelectNumber" />
+               FontSize="36" BorderRadius="0" Clicked="OnSelectNumber"
+                 Command="{Binding DeleteCharCommand}/>
 
         <Button Text="4" Grid.Row="2" Grid.Column="0"
                BackgroundColor="White" TextColor="Black"
-               FontSize="36" BorderRadius="0" Clicked="OnSelectNumber" />
+               FontSize="36" BorderRadius="0" Clicked="OnSelectNumber"
+                 Command="{Binding DeleteCharCommand}/>
         <Button Text="5" Grid.Row="2" Grid.Column="1"
                BackgroundColor="White" TextColor="Black"
                FontSize="36" BorderRadius="0" Clicked="OnSelectNumber" />
@@ -61,7 +64,9 @@
                BackgroundColor="White" TextColor="Black"
                FontSize="36" BorderRadius="0" Clicked="OnSelectNumber" />
 
-        <!--
+        
+        
+   
         <Button Text="÷" Grid.Row="1" Grid.Column="3"
                 BackgroundColor="{x:Static local:SharedResources.OpButtonBkColor}" TextColor="White"
                 FontSize="36" BorderRadius="0" Clicked="OnSelectOperator" />
@@ -82,7 +87,7 @@
         <Button Text="=" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3"
                 BackgroundColor="{x:Static local:SharedResources.OpButtonBkColor}" TextColor="White"
                 FontSize="36" BorderRadius="0" Clicked="OnCalculate" />
-        -->
+        
 
     </Grid>
 </ContentPage>
